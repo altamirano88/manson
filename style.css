@@ -1,0 +1,83 @@
+/* Custom Properties */
+:root {
+  --main-modal-color: rgba(4, 7, 206, 0.979);
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  color: var(--second-color);
+  background-color: var(--main-modal-color);
+  height: 100%;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+a {
+  font-weight: bold;
+  color: var(--second-color);
+  transition: all 0.3s ease-out;
+}
+
+a:hover {
+  color: var(--second-modal-color);
+}
+
+p {
+  padding: 1rem;
+  font-size: 1.25rem;
+}
+
+::selection {
+  background-color: var(--second-color);
+  color: var(--main-color);
+}
+
+.Header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.Header h1 {
+  word-wrap: break-word;
+}
+
+.Header img {
+  margin: 0 auto;
+  display: block;
+  max-width: 150px;
+  border-radius: 50%;
+}
+
+.Header nav {
+  padding: 2rem 0;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.Main {
+  position: relative;
+  margin: 0 auto;
+  padding-bottom: 56.25%; /* 16:9 */
+}
+
+.Main iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
